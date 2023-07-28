@@ -5,6 +5,9 @@ import openai
 api_key = st.text_input("Please enter your OpenAI API key:")
 openai.api_key = api_key
 
+# Set the engine to use (GPT-3.5 Turbo)
+engine = "gpt-3.5-turbo"
+
 # Main program loop
 while True:
     # Prompt user for question
@@ -16,7 +19,7 @@ while True:
 
     # Call OpenAI API to generate a response
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine=engine,
         prompt=user_input,
         max_tokens=100,
         temperature=0.7,

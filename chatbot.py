@@ -11,11 +11,6 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 st.title("Chatbot")
 st.subheader("AI Tutor:")
 
-model = st.selectbox(
-    "Select a model",
-    ("gpt-3.5-turbo", "gpt-4")
-)
-
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
 if 'past' not in st.session_state:
@@ -30,15 +25,12 @@ if query:
     with st.spinner("generating..."):
         messages = st.session_state['messages']
         messages = update_chat(messages, "user", query)
-        # st.write("Before  making the API call")
-        # st.write(messages)
-        response = get_chatgpt_response(messages,model)
+        response = get_chatgpt_response(messages)  # Use GPT-3.5 Turbo (default model)
         messages = update_chat(messages, "assistant", response)
         st.session_state.past.append(query)
         st.session_state.generated.append(response)
-        
-if st.session_state['generated']:
 
+if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
         message(st.session_state["generated"][i], key=str(i))
