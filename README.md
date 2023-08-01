@@ -20,15 +20,15 @@ Customizable and extensible for future enhancements and improvements.
 
 ## Table Of Contents
 
- - [Installation]()
- - [Usage]()
- - [Acknowledgements]()
- - [Technologies Used]()
- - [Code Description]()
- - [Screenshots]()
- - [Future Scope]()
- - [Contributing]()
- - [License]()
+ - [Installation](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#installation)
+ - [Usage](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#usage)
+ - [Acknowledgements](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#acknowledgements)
+ - [Technologies Used](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#technologies-used)
+ - [Code Description](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#code-description)
+ - [Screenshots](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#screenshots)
+ - [Future Scope](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#future-scope)
+ - [Contributing](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#contributing)
+ - [License](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/tree/main#license)
 ## Installation
 
 To use the AI Chatbot powered by OpenAI's GPT-3.5 Turbo, follow these steps to set up the project environment on your local machine:
