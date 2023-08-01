@@ -20,7 +20,7 @@ query = st.text_input("Question: ", key="input")
 
 if 'messages' not in st.session_state:
     st.session_state['messages'] = get_initial_message()
- 
+
 if query:
     with st.spinner("generating..."):
         messages = st.session_state['messages']
