@@ -386,17 +386,16 @@ Overall, the code is designed to provide users with an interactive and user-frie
 
  ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/4.png?raw=true)
 
-![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/5.png?raw=true)
 
  - Chat-
 
- ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/6.png?raw=true)
+ ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/5.png?raw=true)
 
  - Show Messages-
 
- ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/7.png?raw=true)
+ ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/6.png?raw=true)
 
- ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/8.png?raw=true)
+ ![](https://github.com/abhisheksingh-17/Chatbot-Using-Chatgpt-Api/blob/main/Results/7.png?raw=true)
 ## Future Scope
 
 The AI Chatbot project has tremendous potential for further enhancements and expansion. Here are some exciting possibilities for its future development:
