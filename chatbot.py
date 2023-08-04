@@ -8,8 +8,25 @@ import openai
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-st.title("Chatbot")
-st.subheader("AI Tutor:")
+# Set page title and favicon
+st.set_page_config(page_title="AI Chatbot", page_icon=":robot_face:")
+
+# Sidebar header
+with st.sidebar:
+    st.title('AI Chatbot')
+    st.markdown('''
+    **Explore and Learn with AI:**
+
+    - 🤖 Ask questions on various topics.
+    - 📚 Receive informative and helpful responses.
+    - 💡 Expand your knowledge with AI assistance.
+
+    ''')
+    st.info("Note: This chatbot leverages AI to enhance your learning experience.")
+
+
+st.title("AI Chatbot")
+st.subheader("AI Assistance:")
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []

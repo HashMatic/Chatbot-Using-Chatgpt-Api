@@ -155,14 +155,43 @@ import openai
 
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-st.title("Chatbot")
-st.subheader("AI Tutor:")
+# Set page title and favicon
+st.set_page_config(page_title="AI Chatbot", page_icon=":robot_face:")
+
+# Sidebar header
+with st.sidebar:
+    st.title('AI Chatbot')
+    st.markdown('''
+    **Explore and Learn with AI:**
+
+    - 🤖 Ask questions on various topics.
+    - 📚 Receive informative and helpful responses.
+    - 💡 Expand your knowledge with AI assistance.
+    ''')
+    st.info("Note: This chatbot leverages AI to enhance your learning experience.")
+
+st.title("AI Chatbot")
+st.subheader("AI Assistance:")
 ```
  - Importing Libraries: This section imports the necessary libraries and modules required for the chatbot application. It imports streamlit for the web application, streamlit_chat to display the chat messages, utils to access utility functions, os for working with the operating system, dotenv for loading environment variables from a file, and openai to interact with the OpenAI API.
 
  - Setting Up OpenAI API Key: It loads the OpenAI API key from the .env file using os.getenv() and sets it as the API key for the openai library.
 
- - Setting Up Streamlit Web Application: It creates the basic layout of the web application using Streamlit. The st.title() and st.subheader() functions set the title and subheader of the web page, respectively.
+ - import streamlit as st: Imports the Streamlit library, which is used to create interactive web applications with Python.
+
+ - st.set_page_config(page_title="AI Chatbot", page_icon=":robot_face:"): Sets the title and favicon (icon displayed on browser tabs) of the web page.
+
+ - with st.sidebar:: Creates a sidebar section on the web page where you can add content that appears on the side.
+
+ - st.title('AI Chatbot'): Adds a title to the sidebar, displaying "AI Chatbot".
+
+ - st.markdown(''' ... '''): Uses Markdown syntax to add formatted text to the sidebar. In this case, it adds a section with bullet points that describe the capabilities of the AI Chatbot.
+
+ - st.info("Note: This chatbot leverages AI to enhance your learning experience."): Displays an informational box at the bottom of the sidebar, providing a note about the chatbot's usage of AI.
+
+The code sets up a visually appealing and informative sidebar for your AI Chatbot application, presenting users with an introduction and key features of the chatbot. The st.set_page_config function adds branding to the web page, making it more identifiable.
+ 
+ - Setting Up Streamlit Web Application: It creates the basic layout of the web application using Streamlit. The st.sidebar() st.title() and st.subheader() functions set the sidebar,title and subheader of the web page, respectively.
 
  ```python
  if 'generated' not in st.session_state:
